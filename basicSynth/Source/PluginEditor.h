@@ -18,14 +18,19 @@
 //==============================================================================
 /**
 */
+# creates a new class called basic synth audio processor editor
+# new class inherits juce framework's audio processor editor
+# this class navigates the gui part of the plugin, which controls the audio part
 class BasicSynthAudioProcessorEditor  : public juce::AudioProcessorEditor {
 public:
+    # this is a class constructor
+    # it is creating an instance of a class using an instance of the audio class
+    # this is where the gui and audio initially interact
     BasicSynthAudioProcessorEditor (BasicSynthAudioProcessor&);
+    # this is the destructor
+    # this cleans up the class once it is no longer used
+    # it releases dynamically stored memory and other class instances
     ~BasicSynthAudioProcessorEditor();
-
-    //==============================================================================
-    void paint (juce::Graphics&) override;
-    void resized() override;
 
     
 private:
