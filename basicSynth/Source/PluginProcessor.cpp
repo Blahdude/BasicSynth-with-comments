@@ -115,6 +115,7 @@ bool BasicSynthAudioProcessor::isMidiEffect() const {
    #endif
 }
 
+# likely that 0 is not the correct solution. the tail lenght is when the input stops, does audio continue. professional plugins have longer.
 double BasicSynthAudioProcessor::getTailLengthSeconds() const {
     return 0.0;
 }
