@@ -12,6 +12,7 @@
 #include "PluginEditor.h"
 
 //==============================================================================
+# this constructor performs different tasks based on the type of plugin being created (effect, midi, synth)
 BasicSynthAudioProcessor::BasicSynthAudioProcessor()
 #ifndef JucePlugin_PreferredChannelConfigurations
      : juce::AudioProcessor (BusesProperties()
